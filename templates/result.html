@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+{% block sblock %}
+
+<div class="jumbotron bg-info">
+        <h2 class="text-dark"><center><b>MARK SHEET</b></center></h2>
+        </div>
+    <div class="container card" style="background-color:antiquewhite">
+        <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                   
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">Name : {{ inp1 }} </div>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-4">Register No : {{ inp2 }}</div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-sm-6">Semester : {{ inp3 }}</div>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-4">College : {{ inp4 }}</div>
+                            </div><br>
+                            <div class="row">
+                                <table class="table" style="text-align:center">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Mark Obtained</th>
+                                            <th>Total Marks</th>
+                                            <th>Grade</th>
+                        
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ inp5 }}</td>
+                                            <td>{{ inp6 }}</td>
+                                            <td>{{ inp7 }}</td>
+                                            <td>{{ g1 }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ inp8 }}</td>
+                                            <td>{{ inp9 }}</td>
+                                            <td>{{ inp10 }}</td>
+                                            <td>{{ g2 }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ inp11 }}</td>
+                                            <td>{{ inp12 }}</td>
+                                            <td>{{ inp13 }}</td>
+                                            <td>{{ g3 }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ inp14 }}</td>
+                                            <td>{{ inp15 }}</td>
+                                            <td>{{ inp16 }}</td>
+                                            <td>{{ g4 }}</td>
+                                        </tr>
+                                </tbody>
+                    
+                            </table>
+                        </div><br>
+                    </div>
+                    <div style="text-align:center">
+                        <div class="col"><b>SEMESTER RESULT  : {{status}}</b></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div> 
+        </div>
+    </div>
+{% endblock %} 

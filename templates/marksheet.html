@@ -1,0 +1,179 @@
+{% extends 'layout.html' %}
+{% block sblock %}
+<div class="container">
+    <!-- <center>
+    <p><h3>Enter your Details</h3><br>
+    </p>
+    </center>   
+    <form type="form" method="POST" action="/result" style="background: wheat;padding: 2%;margin: auto;padding: 2%">
+        <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+                <div class="row" style="margin:auto">
+                        <div class="col-sm-6"><b>Name</b></div>
+                        <div class="col-sm-6"><input type="text" name="name" class="form-control"/></div>
+                    </div><br>
+                <div class="row" style="margin:auto">
+                    <div class="col-sm-6"><b>Reg.No</b></div>
+                    <div class="col-sm-6"><input type="text" name="regno" class="form-control"/></div>
+                </div><br>
+                    <div class="row" style="margin:auto">
+                        <div class="col-sm-6"><b>Semester</b></div>
+                        <div class="col-sm-6">
+                            <select name="semester">
+                                <option>--select--</option>
+                                <option value="Semester 1">Semester 1</option>
+                                <option value="Semester 2">Semester 2</option>
+                                <option value="Semester 3">Semester 3</option>
+                                <option value="Semester 4">Semester 4</option>
+                                <option value="Semester 5">Semester 5</option>
+                                <option value="Semester 6">Semester 6</option>
+                                <option value="Semester 7">Semester 7</option>
+                                <option value="Semester 8">Semester 8</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="row" style="margin:auto">
+                        <div class="col-sm-6"><b>College</b></div>
+                        <div class="col-sm-6"><input type="text" name="college" class="form-control"/></div>
+                    </div><br>
+                    <div>
+                        <table class="table-bordered text-center" style="margin:auto">
+                            <thead class="thead-dark" style="background:white">
+                                <tr class="table">
+                                    <th>Subject</th>
+                                    <th>Mark Obtained</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="subject1" class="form-control"></td>
+                                    <td><input type="number" name="mark1" class="form-control"></td>
+                                    <td><input type="number" name="t1" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="subject2" class="form-control"></td>
+                                    <td><input type="number" name="mark2" class="form-control"></td>
+                                    <td><input type="number" name="t2" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="subject3" class="form-control"></td>
+                                    <td><input type="number" name="mark3" class="form-control"></td>
+                                    <td><input type="number" name="t3" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="subject4" class="form-control"></td>
+                                    <td><input type="number" name="mark4" class="form-control"></td>
+                                    <td><input type="number" name="t4" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+                    </div>
+                    <div class="row"><button style="margin:auto;background:#795548;color:white" class="button" type="submit" >Submit</button></div>
+                    <br>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+        
+    </form><br>
+</div> -->
+
+<form type="form" style="margin: auto" method="POST" action="/result">
+    <div class="container card" style="background-color:burlywood">
+           <center> <b><h1>Marklist Generator</h1></b>
+           <p><h4><b>Enter your details</b></h4></p></center>
+    </div>
+    <br><br>
+
+    <div class="container card" style="background-color: aqua">
+        <br>
+        <center>
+            <div class="row">
+            <div class="col-sm-5"><b>Name :</b></div>
+            <div class="col-sm-5">
+            <input type="text" name="name" class="form-control"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-5"><b>Register no. :</b></div>
+                <div class="col-sm-5"><input type="text" name="regno" class="form-control"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-5"><b>Semester :</b></div>
+                <div class="col-sm-5">
+                <select name="semester" class="form-control">
+                    <option>---Choose Semester---</option>
+                    <option value="semester1">Semester-1</option>
+                    <option value="semester2">Semester-2</option>
+                    <option value="semester3">Semester-3</option>
+                    <option value="semester4">Semester-4</option>
+                    <option value="semester5">Semester-5</option>
+                    <option value="semester6">Semester-6</option>
+                    <option value="semester7">Semester-7</option>
+                    <option value="semester8">Semester-8</option>
+                </select>
+            </div>
+            </div>
+            <br>
+
+            <div class="row">
+            <div class="col-sm-5"><b>College :</b></div>
+            <div class="col-sm-5">
+                <input type="text" name="college" class="form-control">
+            </div>
+        </div>
+        <br>
+    </center>
+    </div>
+        <br><br>
+        <div class="container card" style="background-color:lightcyan">
+            <br>
+        <div class="row">
+            <div class="col-sm-2"><b>SUBJECT-1 :</b></div>
+            <div class="col-sm-2"><input type="text" name="s1" class= "form-control"></div>
+            <div class="col-sm-2"><b>MARKS OBTAINED :</b></div>
+            <div class="col-sm-2"><input type="number" name="s1o" class= "form-control"></div>
+            <div class="col-sm-2"><b>TOTAL MARKS :</b></div>
+            <div class="col-sm-2"><input type="number" name="s1t" class= "form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-sm-2"><b>SUBJECT-2 :</b></div>
+                <div class="col-sm-2"><input type="text" name="s2" class= "form-control"></div>
+                <div class="col-sm-2"><b>MARKS OBTAINED :</b></div>
+                <div class="col-sm-2"><input type="number" name="s2o" class= "form-control"></div>
+                <div class="col-sm-2"><b>TOTAL MARKS :</b></div>
+                <div class="col-sm-2"><input type="number" name="s2t" class= "form-control"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                    <div class="col-sm-2"><b>SUBJECT-3 :</b></div>
+                    <div class="col-sm-2"><input type="text" name="s3" class= "form-control"></div>
+                    <div class="col-sm-2"><b>MARKS OBTAINED :</b></div>
+                    <div class="col-sm-2"><input type="number" name="s3o" class= "form-control"></div>
+                    <div class="col-sm-2"><b>TOTAL MARKS :</b></div>
+                    <div class="col-sm-2"><input type="number" name="s3t" class= "form-control"></div>
+                </div>
+                <br>
+
+                <div class="row">
+                        <div class="col-sm-2"><b>SUBJECT-4 :</b></div>
+                        <div class="col-sm-2"><input type="text" name="s4" class= "form-control"></div>
+                        <div class="col-sm-2"><b>MARKS OBTAINED :</b></div>
+                        <div class="col-sm-2"><input type="number" name="s4o" class= "form-control"></div>
+                        <div class="col-sm-2"><b>TOTAL MARKS :</b></div>
+                        <div class="col-sm-2"><input type="number" name="s4t" class= "form-control"></div>
+                    </div>
+                    <br><br>
+                    <div class="row"><button style="margin:auto" class="btn btn-info" type="submit" >Generate Marklist</button></div>
+                <br>
+                </div>
+            
+                
+            </form>
+{% endblock %}
